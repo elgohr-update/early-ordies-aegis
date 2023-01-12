@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" href="aegis.png" />
+        <script src="web3.min.js"></script>
+        <script src="bundle.js"></script>
+        <script src="settings.js"></script>
+        <script src="wallet.js"></script>
+        <script src="bridge.js"></script>
+    </head>
+    <body>
+        <br/>
+        <div class="container">
+
+            <div class="card-deck mb-3 text-center">
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">💵 AEGIS Wallet</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush mb-4" style="text-align: left!important; margin-bottom: 50px!important;">
+                            <li class="list-group-item" id="account-address" style="padding-right: 5px;">Account: 0x</li>
+                            <li class="list-group-item" id="account-off-chain-balance">Off-Chain Balance: 0</li>
+                        </ul>
+                        <div class="container">
+                            <div id="account-alert" class="alert alert-primary d-none" role="alert">
+                            </div>
+                        </div>
+                        <div class="card bg-light" style="padding: 10px; margin-bottom: 20px;">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">TO:</span>
+                                </div>
+                                <input id="to-address" type="text" class="form-control" value=0x>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">AUSD</span>
+                                </div>
+                                <input id="send-amount" type="number" class="form-control" value=0>
+                            </div>
+                            <button id="send-button" type="button" class="btn btn-lg btn-block btn-primary" onclick="offChainTransfer();" disabled>⌛ Getting Ready...</button>
+                        </div>
+
+                        <div class="card bg-light" style="padding: 10px; margin-bottom: 20px;">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">PRIV:</span>
+                                </div>
+                                <input id="private-key" type="text" class="form-control" value=0x>
+                            </div>
+    
+                            <button id="register-button" type="button" class="btn btn-lg btn-block btn-primary" onclick="registerAccount();" disabled>⌛ Getting Ready...</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">🔃 AEGIS Bridge</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush mb-4" style="text-align: left!important; margin-bottom: 50px!important;">
+                            <li class="list-group-item" id="contract-address" style="padding-right: 5px;">Contract: 0x</li>
+                            <li class="list-group-item" id="account-on-chain-balance">On-Chain Balance: 0</li>
+                        </ul>
+                        <div class="container">
+                            <div id="bridge-alert" class="alert alert-primary d-none" role="alert">
+                            </div>
+                        </div>
+                        <div class="card bg-light" style="padding: 10px; margin-bottom: 20px;">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">AUSD</span>
+                                </div>
+                                <input id="deposit-amount" type="number" class="form-control" value=0>
+                            </div>
+                            <button id="deposit-button" type="button" class="btn btn-lg btn-block btn-primary" onclick="deposit();" disabled>⌛ Getting Ready...</button>
+                        </div>
+                        
+                        <div class="card bg-light" style="padding: 10px; margin-bottom: 20px;">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">TO:</span>
+                                </div>
+                                <input id="withdraw-address" type="text" class="form-control" value=0x>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">AUSD</span>
+                                </div>
+                                <input id="withdraw-amount" type="text" class="form-control" value=0>
+                            </div>
+    
+                            <button id="withdraw-button" type="button" class="btn btn-lg btn-block btn-primary" onclick="withdraw();" disabled>⌛ Getting Ready...</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </body>
+</html>
