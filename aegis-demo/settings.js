@@ -1,7 +1,7 @@
-const HUB_CONTRACT_ADDRESS = "0xc88e399816D1BB6aC0fC64E1FBFcfB98cB7E98B2";
+const HUB_CONTRACT_ADDRESS = "0xe263C67c412A374Ea24eC7075C3DdbdC89b1e381";
 const HUB_API_URL = "http://aegis-hub.spear.technology/";
 const RPC_URL = "http://ganache.spear.technology:7545/";
-const AUSD_ADDRESS = "0xd1eb6c695d573C2Ae32289f9941AbbbD58BcdD25";
+const AUSD_ADDRESS = "0x549BD80b7666e689b8f28FD554a66dC382E2388F";
 
 const nocust = getNocust();
 const web3 = new Web3();
