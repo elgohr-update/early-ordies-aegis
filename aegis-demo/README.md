@@ -2,21 +2,24 @@
 
 Super simple one-click browser wallets, transferring coins over a Aegis NOCUST hub with an AUSD ERC20 token.
 
+
 # Online Demo
 For a quick and easy demo, we have created two instances that you can use on the following URLs:
-```
+
 http://aegis-demo-one.spear.technology/
+
 http://aegis-demo-two.spear.technology/
-```
+
 
 # Offline Demo
 To run the demo yourself offline, simply download this folder and open the index.html file on your browser. 
 
+
 # Available accounts
 We have provided 100 accounts for the Ganache blockchain running on http://ganache.spear.technology that can be found on this file:
-```
+
 https://github.com/spear-protocol/aegis/blob/main/aegis-demo/available-accounts.txt
-```
+
 
 ## How is bundle.js generated?
 
