@@ -6,6 +6,7 @@ Aegis is a mythical shield in Greek mythology that protected Zeus and Athena in 
 
 We envision a world where no one is unbanked and where anyone can participate in the global financial system that is fast, cheap and transparent while keeping custody of their money. To achieve our vision, we shall combine two powerful and synergistic technologies: the [Reserve protocol](https://reserve.org/en/protocol/) and the [NOCUST commit-chain](https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/commit-chains/).
 
+
 # System Summary
 
 Aegis has two main components:
@@ -13,6 +14,7 @@ Aegis has two main components:
 1. Aegis Commit-chain - A chain of commits to the NOCUST smart contracts on Ethereum by centralized but trustless operators running the Aegis Hub server. The operators facilitate gas-less transactions off-chain without taking custody of user funds. 
 
 2. Aegis USD (AUSD) stablecoin - an RToken that is designed to protect the funds of normal users who we envisage to be regular everyday people through collateral diversity and collateral default insurance. The fees for transacting on Aegis will be paid using AUSD.
+
 
 # Aegis Commit-chain
 
@@ -23,6 +25,7 @@ Based on the [NOCUST commit-chain](https://docs.liquidity.network/background) te
 </p>
 
 An Aegis Hub is a server that is run by an operator to interact with the Aegis commit-chain. It is a fork of the [NOCUST Hub server](https://github.com/liquidity-network/nocust-hub).
+
 
 ## NOCUST Pros and Cons
 
@@ -37,17 +40,38 @@ Drawbacks:
 
 NOCUST whitepaper: https://eprint.iacr.org/2018/642.pdf
 
+
+# Aegis USD (AUSD)
+
+Prioritizes safety and capital preservation.
+Collateral basket will be composed of currently available tokens across Compound and Aave:
+```
+   cDAI
+   cUSDC
+   cUSDT
+   cUSDP
+   cBUSD
+   aDAI
+   aUSDC
+   aUSDT
+   aUSDP
+   aBUSD
+```
+
+
 # RTokens x NOCUST
 
 RTokens unleashes the potential of the NOCUST concept by improving the project tokenomics and wrapping DeFi into stablecoins circumventing the need for the L2 EVM. This provides a better user experience through fast and cheap transactions and by preserving composability on L1. 
 
 Project Overview: https://docs.google.com/presentation/d/1SbtcPyLduc81ADMjvGpHKU23flVJVWTYemeeXz8Eiuo/
 
+
 # Demo
 
 To try out the basic functionality of Aegis, check the aegis-demo folder on this repo:
 
 https://github.com/spear-protocol/aegis/tree/main/aegis-demo
+
 
 # Disclaimer
 
