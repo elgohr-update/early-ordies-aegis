@@ -41,6 +41,8 @@ NOCUST whitepaper: https://eprint.iacr.org/2018/642.pdf
 
 RTokens unleashes the potential of the NOCUST concept by improving the project tokenomics and wrapping DeFi into stablecoins circumventing the need for the L2 EVM. This provides a better user experience through fast and cheap transactions and by preserving composability on L1. 
 
+Project Overview: https://docs.google.com/presentation/d/1SbtcPyLduc81ADMjvGpHKU23flVJVWTYemeeXz8Eiuo/
+
 # Demo
 
 To try out the basic functionality of Aegis, check the aegis-demo folder on this repo:
