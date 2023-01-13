@@ -45,9 +45,11 @@ Bundle.js is a browser friendly compilation of all dependencies required to use 
   ```
 
 2) package.json including dependencies below:
+  ```
   "bignumber.js": "9.1.0",
   "nocust-cline.js": "4.0.0-alpha.5",
   "web3": "1.8.0"
+  ```
 
 3) then dependencies are bundled using browserify
   ```
