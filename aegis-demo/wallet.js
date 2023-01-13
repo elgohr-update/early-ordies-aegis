@@ -65,7 +65,7 @@ $(document).ready(function () {
   const registerAccount = async () => {
 
     var NEW_PRIV = $("#private-key").val()
-    if (NEW_PRIV.substring(0,1) !== "0x") {
+    if (NEW_PRIV.substring(0,2) !== "0x") {
       NEW_PRIV = "0x" + NEW_PRIV;
     }
     
@@ -98,7 +98,7 @@ $(document).ready(function () {
       if (onChainBalance >= 100000000000000000000000000) {
         $("#account-on-chain-balance").text('On-chain Balance: ' + onChainBalance + ' AUSD');
       } else {
-        $("#account-on-chain-balance").text('On-chain Balance: ' + web3.utils.fromWei(onChainBalance.toString()) + ' AUSD');
+        $("#account-on-chain-balance").text('On-chain Balance: ' + web3.utils.fromWei(onChainBalance.toFixed()) + ' AUSD');
       }
 
       $("#account-alert").text("New Account Registered");
