@@ -16,13 +16,34 @@ We envision a world where no one is unbanked and where anyone can participate in
 
 # Demo
 
+https://user-images.githubusercontent.com/111804246/212467794-0920e5ff-3006-44e1-87a1-f9ee914ff213.mp4
+
+<div align="center">
+  <h6>Aegis Demo Part 1</h6>
+</div>
+
+https://user-images.githubusercontent.com/111804246/212467825-d89b9f02-cc6b-4d0f-ba7e-347242e3e4b8.mp4
+
+<div align="center">
+  <h6>Aegis Demo Part 2</h6>
+</div>
+
 For a quick and easy demo, we have created two instances that you can use on the following URLs:
 
-http://aegis-demo-one.spear.technology/
+Demo #1: http://aegis-demo-one.spear.technology/
 
-http://aegis-demo-two.spear.technology/
+Demo #2: http://aegis-demo-two.spear.technology/
 
+Aegis Hub: http://aegis-hub.spear.technology/audit/
 
+Ganache Blockchain: 
+
+| Variable | Value |
+|--------------|------------------------------------------------------|
+| Network Name | Forked ETH |
+| RPC URL | http://ganache.spear.technology:7545 |
+| Chain ID | 1337 |
+| Symbol | ETH |
 
 More info: https://github.com/spear-protocol/aegis/tree/main/aegis-demo
 
