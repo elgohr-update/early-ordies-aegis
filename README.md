@@ -5,7 +5,7 @@ A secure, scalable, and non-custodial Ethereum L2 powered by the Reserve RToken 
 Aegis is a mythical shield in Greek mythology that protected Zeus and Athena in battle. In a similar fashion, the Aegis L2 is designed to protect users and their funds while they are conducting finance and commerce in an increasingly adversarial environment.
 
 Features:
-- Unbounded scalability compared to rollups
+- [Unbounded Scalability](https://docs.liquidity.network/costs) compared to rollups
 - Instant transaction finality
 - Low fees paid with AUSD stablecoin
 - Can support ETH and any other ERC-20 token
@@ -104,7 +104,7 @@ Based on the [NOCUST commit-chain](https://docs.liquidity.network/background) te
 An Aegis Hub is a server that is run by an operator to interact with the Aegis commit-chain. It is a fork of the [NOCUST Hub server](https://github.com/liquidity-network/nocust-hub).
 
 
-# Aegis NOCUST Server
+# Aegis NOCUST Hub
 
 This will guide you through the server's code.
 
@@ -112,9 +112,9 @@ For detailed endpoint documentation deploy a local development operator using no
 
 
 # Deployment
-Clone the repo and its submodules
+Clone the repo 
 ```
-git clone --recurse-submodules https://github.com/liquidity-network/nocust-server.git
+git clone https://github.com/spear-protocol/aegis-hub.git
 ```
 
 ### Development hub 
@@ -124,29 +124,27 @@ This will create a local POA blockchain running with Parity, deploy the contract
 ```
 
 ### Production hub
-This is to operate a hub on public an already existing Blockchain (Rinkeby, Kovan, ETH mainnet, etc..). This will require to have a nocust smart-contract manually deployed, See https://github.com/liquidity-network/just-deploy/. You will need to create an `.env` file at the root of the repo with at least the following variables:
+This is to operate a hub on public an already existing Blockchain (Goerli, Kovan, ETH mainnet, etc..). This will require to have a nocust smart-contract manually deployed, See https://github.com/spear-protocol/aegis-hub/just-deploy/. You will need to create an `.env` file at the root of the repo with at least the following variables:
 ```
 HUB_OWNER_ACCOUNT_ADDRESS=0xXXXXXX
 HUB_OWNER_ACCOUNT_KEY=XXXXXXXX
-HUB_LQD_CONTRACT_ADDRESS=0xXXXXXXXX
-HUB_LQD_CONTRACT_CONFIRMATIONS=20
+HUB_AEGIS_CONTRACT_ADDRESS=0xXXXXXXXX
+HUB_AEGIS_CONTRACT_CONFIRMATIONS=20
 SLA_TOKEN_ADDRESS=0xXXXXXXXX
 HUB_ETHEREUM_NODE_URL=YYYYYYY
 ```
 
 - `HUB_OWNER_ACCOUNT_ADDRESS` NOCUST hub Operator address with `0x` 
 - `HUB_OWNER_ACCOUNT_KEY` Private key of the operator without `0x` !! Very sensitve !!
-- `HUB_LQD_CONTRACT_ADDRESS` NOCUST contract address
-- `HUB_LQD_CONTRACT_CONFIRMATIONS` amount of blocks, used for confirmation of deposits, withdrawals, etc.. 
--  `HUB_ETHEREUM_NODE_URL` Http(s) RPC endpoint URL (i.g Infura)
-- `HUB_ETHEREUM_NETWORK_IS_POA` if in local developement you are using POA-networks (Like Rinkeby), then this flag should be set as `True`. For ETH mainnet use `False`
+- `HUB_AEGIS_CONTRACT_ADDRESS` NOCUST contract address
+- `HUB_AEIG_CONTRACT_CONFIRMATIONS` amount of blocks, used for confirmation of deposits, withdrawals, etc.. 
+- `HUB_ETHEREUM_NODE_URL` Http(s) RPC endpoint URL (i.g Alchemy)
+- `HUB_ETHEREUM_NETWORK_IS_POA` if in local developement you are using POA-networks (Like Goerli), then this flag should be set as `True`. For ETH mainnet use `False`
 
 To run the production hub, simply do:
 ```
 ./run.sh prod
 ```
-### Contract deployment
-`deploy_contract.sh` will ask you about node url, owner address and private key. After that it will create docker container for deployment and return to you address of deployed contract. This address you should put into .env file.
 
 ### Contract deployment
 `deploy_contract.sh` will ask you about node url, owner address and private key. After that it will create docker container for deployment and return to you address of deployed contract. This address you should put into .env file.
@@ -154,13 +152,7 @@ To run the production hub, simply do:
 ### Optional notification
 - `NOTIFICATION_HOOK_URL` should be slack notification url, if you want to use notification system
 - `SERVER_NAME` if you have a several servers, but same notification slack channel, please set this variable
-
-### Contract deployment
-`deploy_contract.sh` will ask you about node url, owner address and private key. After that it will create docker container for deployment and return to you address of deployed contract. This address you should put into .env file.
-
-### Optional notification
-- `NOTIFICATION_HOOK_URL` should be slack notification url, if you want to use notification system
-- `SERVER_NAME` if you have a several servers, but same notification slack channel, please set this variable
+- 
 
 # Server Architechture
 The server spans 6 different processes, each has it's own function:
@@ -199,9 +191,11 @@ The server spans 6 different processes, each has it's own function:
 + Handle sending out websocket notifications found in [auditor tasks](#auditor) and [synchronizer tasks](#synchronizer)
 + Handle automatic terms of service update found in [tos tasks](#tos)
 
+
 ## Chain <a name="chain"></a>
 + Started using `celeryworker_chain.sh`
 + Handle parsing blocks and other tasks requiring parallelism found in [contractor tasks](#contractor)
+
 
 ## Verifier <a name="verifier"></a>
 + Started using `celeryworker_verifier.sh`
@@ -347,5 +341,3 @@ Endpoints used to make transactions.
 # Disclaimer
 
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
- 
