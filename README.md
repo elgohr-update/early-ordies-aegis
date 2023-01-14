@@ -28,6 +28,7 @@ https://user-images.githubusercontent.com/111804246/212467794-0920e5ff-3006-44e1
 <div align="center">
   <h6>Aegis Demo Part 1</h6>
 </div>
+</br>
 
 
 https://user-images.githubusercontent.com/111804246/212467825-d89b9f02-cc6b-4d0f-ba7e-347242e3e4b8.mp4
@@ -55,30 +56,9 @@ More info: https://github.com/spear-protocol/aegis/tree/main/aegis-demo
 
 Aegis has two main components:
 
-1. Aegis Commit-chain - A chain of commits to the NOCUST smart contracts on Ethereum by centralized but trustless operators running the Aegis Hub server. The operators facilitate gas-less transactions off-chain without taking custody of user funds. 
+1. Aegis USD (AUSD) stablecoin - an RToken that is designed to protect the funds of normal users who we envisage to be regular everyday people through collateral diversity and collateral default insurance. The fees for transacting on Aegis will be paid using AUSD.
 
-2. Aegis USD (AUSD) stablecoin - an RToken that is designed to protect the funds of normal users who we envisage to be regular everyday people through collateral diversity and collateral default insurance. The fees for transacting on Aegis will be paid using AUSD.
-
-
-# Aegis USD (AUSD)
-
-Prioritizes safety and capital preservation.
-Collateral basket will be composed of currently available tokens across Compound and Aave:
-```
-   cDAI
-   cUSDC
-   cUSDT
-   cUSDP
-   cBUSD
-   aDAI
-   aUSDC
-   aUSDT
-   aUSDP
-   aBUSD
-```
-<p align="center">
-   <img src="https://user-images.githubusercontent.com/111804246/212467317-4d57e197-d810-4fea-a27b-6bef3ef1eb86.JPG" width=80% height=80%>
-</p>
+2. Aegis Commit-chain - A chain of commits to the NOCUST smart contracts on Ethereum by centralized but trustless operators running the Aegis Hub server. The operators facilitate gas-less transactions off-chain without taking custody of user funds. 
 
 
 # Reserve x NOCUST
@@ -86,6 +66,17 @@ Collateral basket will be composed of currently available tokens across Compound
 Reserve's RTokens unleashes the potential of the NOCUST concept by improving the project tokenomics and wrapping DeFi into stablecoins circumventing the need for the L2 EVM. This provides a better user experience through fast and cheap transactions and by preserving composability on L1. 
 
 Project Overview: https://docs.google.com/presentation/d/1SbtcPyLduc81ADMjvGpHKU23flVJVWTYemeeXz8Eiuo/
+
+
+# Aegis USD (AUSD)
+
+<p align="center">
+   <img src="https://user-images.githubusercontent.com/111804246/212468050-586315d1-14f6-49fd-ad1c-475d803065e4.JPG" width=80% height=80%>
+</p>
+
+<p align="center">
+   <img src="https://user-images.githubusercontent.com/111804246/212467317-4d57e197-d810-4fea-a27b-6bef3ef1eb86.JPG" width=80% height=80%>
+</p>
 
 
 ## NOCUST Pros and Cons
