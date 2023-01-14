@@ -52,6 +52,7 @@ Ganache Blockchain:
 | Chain ID | 1337 |
 | Symbol | ETH |
 
+</br>
 More info: https://github.com/spear-protocol/aegis/tree/main/aegis-demo
 
 
