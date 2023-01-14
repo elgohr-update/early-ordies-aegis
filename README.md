@@ -9,17 +9,28 @@ A secure, scalable, and non-custodial Ethereum L2 powered by the Reserve RToken 
 
 Aegis is a mythical shield in Greek mythology that protected Zeus and Athena in battle. In a similar fashion, the Aegis L2 is designed to protect users and their funds while they are conducting finance and commerce in an increasingly adversarial environment.
 
+Features:
+- Unbounded scalability compared to rollups
+- Instant transaction finality
+- Low fees paid with AUSD stablecoin
+- Can support ETH and any other ERC-20 token
+- Enables a [TEX](https://eprint.iacr.org/2019/265) (Trustless Exchange)
+
 We envision a world where no one is unbanked and where anyone can participate in the global financial system that is fast, cheap and transparent while keeping custody of their money. To achieve our vision, we shall combine two powerful and synergistic technologies: the [Reserve protocol](https://reserve.org/en/protocol/) and the [NOCUST commit-chain](https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/commit-chains/).
 
 
 # Demo
 
-To try out the basic functionality of Aegis, check the aegis-demo folder on this repo:
+For a quick and easy demo, we have created two instances that you can use on the following URLs:
 
-https://github.com/spear-protocol/aegis/tree/main/aegis-demo
+http://aegis-demo-one.spear.technology/
+
+http://aegis-demo-two.spear.technology/
+
+More info: https://github.com/spear-protocol/aegis/tree/main/aegis-demo
 
 
-# System Summary
+# System Design
 
 Aegis has two main components:
 
