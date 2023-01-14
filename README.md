@@ -1,8 +1,3 @@
-<p align="center">
-   <img src="https://user-images.githubusercontent.com/111804246/212466485-1bed593b-0cb8-4821-b69a-b80d877b43d8.JPG" width=40% height=40%>
-</p>
-
-
 # Aegis
 
 A secure, scalable, and non-custodial Ethereum L2 powered by the Reserve RToken platform.
@@ -56,7 +51,7 @@ Collateral basket will be composed of currently available tokens across Compound
    aBUSD
 ```
 <p align="center">
-   <img src="https://user-images.githubusercontent.com/111804246/212467317-4d57e197-d810-4fea-a27b-6bef3ef1eb86.JPG" width=50% height=50%>
+   <img src="https://user-images.githubusercontent.com/111804246/212467317-4d57e197-d810-4fea-a27b-6bef3ef1eb86.JPG" width=80% height=80%>
 </p>
 
 
@@ -65,17 +60,6 @@ Collateral basket will be composed of currently available tokens across Compound
 Reserve's RTokens unleashes the potential of the NOCUST concept by improving the project tokenomics and wrapping DeFi into stablecoins circumventing the need for the L2 EVM. This provides a better user experience through fast and cheap transactions and by preserving composability on L1. 
 
 Project Overview: https://docs.google.com/presentation/d/1SbtcPyLduc81ADMjvGpHKU23flVJVWTYemeeXz8Eiuo/
-
-
-# Aegis Commit-chain
-
-Based on the [NOCUST commit-chain](https://docs.liquidity.network/background) technology developed by Liquidity Network. It is tightly integrated with the Aegis USD that serves as its native token to solve the drawbacks of the original NOCUST implementation. 
-
-<p align="center">
-   <img src="https://i.imgur.com/9ekBVjB.png" width=60% height=60%>
-</p>
-
-An Aegis Hub is a server that is run by an operator to interact with the Aegis commit-chain. It is a fork of the [NOCUST Hub server](https://github.com/liquidity-network/nocust-hub).
 
 
 ## NOCUST Pros and Cons
@@ -92,11 +76,23 @@ Drawbacks:
 NOCUST whitepaper: https://eprint.iacr.org/2018/642.pdf
 
 
-# NOCUST-server
+# Aegis Commit-chain
+
+Based on the [NOCUST commit-chain](https://docs.liquidity.network/background) technology developed by Liquidity Network. It is tightly integrated with the Aegis USD that serves as its native token to solve the drawbacks of the original NOCUST implementation. 
+
+<p align="center">
+   <img src="https://i.imgur.com/9ekBVjB.png" width=60% height=60%>
+</p>
+
+An Aegis Hub is a server that is run by an operator to interact with the Aegis commit-chain. It is a fork of the [NOCUST Hub server](https://github.com/liquidity-network/nocust-hub).
+
+
+# Aegis NOCUST Server
 
 This will guide you through the server's code.
 
 For detailed endpoint documentation deploy a local development operator using nocust-ensemble and check [Local API documentation](http://localhost:8123/swagger).
+
 
 # Deployment
 Clone the repo and its submodules
@@ -104,7 +100,7 @@ Clone the repo and its submodules
 git clone --recurse-submodules https://github.com/liquidity-network/nocust-server.git
 ```
 
-### Developpment hub 
+### Development hub 
 This will create a local POA blockchain running with Parity, deploy the contracts, and start a NOCUST hub. 
 ```
 ./run.sh
@@ -197,9 +193,6 @@ The server spans 6 different processes, each has it's own function:
     - respond to challenges
     - confirm withdrawals
     - write queued transactions to the blockchain
-
-
-
 
 
 # Module List
@@ -333,8 +326,6 @@ Endpoints used to sign the operator's terms of service, handles updates to the t
 ## Transactor <a name="transactor"></a>
 Endpoints used to make transactions.
 
-## Disclaimer
-THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Disclaimer
 
