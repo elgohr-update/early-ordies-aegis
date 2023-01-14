@@ -54,7 +54,7 @@ Ganache Blockchain:
 
 </br>
 More info: https://github.com/spear-protocol/aegis/tree/main/aegis-demo
-
+</br>
 
 # System Design
 
@@ -156,7 +156,7 @@ To run the production hub, simply do:
 - `SERVER_NAME` if you have a several servers, but same notification slack channel, please set this variable
 
 
-More info: https://github.com/spear-protocol/aegis/blob/main/aegis-hub/README.md
+More info: https://github.com/spear-protocol/aegis/blob/main/aegis-hub/
 
 </br>
 
