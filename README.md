@@ -7,6 +7,13 @@ Aegis is a mythical shield in Greek mythology that protected Zeus and Athena in 
 We envision a world where no one is unbanked and where anyone can participate in the global financial system that is fast, cheap and transparent while keeping custody of their money. To achieve our vision, we shall combine two powerful and synergistic technologies: the [Reserve protocol](https://reserve.org/en/protocol/) and the [NOCUST commit-chain](https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/commit-chains/).
 
 
+# Demo
+
+To try out the basic functionality of Aegis, check the aegis-demo folder on this repo:
+
+https://github.com/spear-protocol/aegis/tree/main/aegis-demo
+
+
 # System Summary
 
 Aegis has two main components:
@@ -64,13 +71,6 @@ Project Overview: https://docs.google.com/presentation/d/1SbtcPyLduc81ADMjvGpHKU
 # RTokens x NOCUST
 
 RTokens unleashes the potential of the NOCUST concept by improving the project tokenomics and wrapping DeFi into stablecoins circumventing the need for the L2 EVM. This provides a better user experience through fast and cheap transactions and by preserving composability on L1. 
-
-
-# Demo
-
-To try out the basic functionality of Aegis, check the aegis-demo folder on this repo:
-
-https://github.com/spear-protocol/aegis/tree/main/aegis-demo
 
 
 # Disclaimer
