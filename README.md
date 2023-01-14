@@ -80,7 +80,7 @@ Benefits:
 3. Superior User Experience
 
 Drawbacks:
-1. Weak Tokenomics
+1. [Weak Tokenomics](https://blog.liquidity.network/2020/07/12/hub-operator-program/)
 2. Lack of EVM Compatability
 
 NOCUST whitepaper: https://eprint.iacr.org/2018/642.pdf
