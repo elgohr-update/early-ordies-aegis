@@ -25,4 +25,4 @@ python deploy_linked.py contracts/ethereum-hub-contract-10.json <PRIVATE KEY WIT
 
 The first argument is the contract binary, `ethereum-hub-contract-10.json` is the latest version. Omit `--publish` to make a dryrun.
 
-The last contract deployed with the name `__NOCUSTCommitChain_____________________` is the main contract address to specify to `HUB_LQD_CONTRACT_ADDRESS` on the NOCUST server
+The last contract deployed with the name `__NOCUSTCommitChain_____________________` is the main contract address to specify to `HUB_AEGIS_CONTRACT_ADDRESS` on the NOCUST server
