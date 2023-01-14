@@ -18,9 +18,9 @@ We envision a world where no one is unbanked and where anyone can participate in
 
 For a quick and easy demo, we have created two instances that you can use on the following URLs:
 
-Demo #1: http://aegis-demo-one.spear.technology/
+Demo Instance #1: http://aegis-demo-one.spear.technology/
 
-Demo #2: http://aegis-demo-two.spear.technology/
+Demo Instance #2: http://aegis-demo-two.spear.technology/
 
 
 https://user-images.githubusercontent.com/111804246/212467794-0920e5ff-3006-44e1-87a1-f9ee914ff213.mp4
