@@ -61,22 +61,11 @@ Aegis has two main components:
 2. Aegis Commit-chain - A chain of commits to the NOCUST smart contracts on Ethereum by centralized but trustless operators running the Aegis Hub server. The operators facilitate gas-less transactions off-chain without taking custody of user funds. 
 
 
-# Reserve x NOCUST
+## Reserve x NOCUST
 
-Reserve's RTokens unleashes the potential of the NOCUST concept by improving the project tokenomics and wrapping DeFi into stablecoins circumventing the need for the L2 EVM. This provides a better user experience through fast and cheap transactions and by preserving composability on L1. 
+Reserve's RTokens unleashes the potential of the NOCUST concept by improving the project tokenomics and wrapping DeFi into RTokens circumventing the need for an L2 EVM. This provides a better user experience through fast and cheap transactions and by preserving composability on L1. 
 
 Project Overview: https://docs.google.com/presentation/d/1SbtcPyLduc81ADMjvGpHKU23flVJVWTYemeeXz8Eiuo/
-
-
-# Aegis USD (AUSD)
-
-<p align="center">
-   <img src="https://user-images.githubusercontent.com/111804246/212468050-586315d1-14f6-49fd-ad1c-475d803065e4.JPG" width=80% height=80%>
-</p>
-
-<p align="center">
-   <img src="https://user-images.githubusercontent.com/111804246/212467317-4d57e197-d810-4fea-a27b-6bef3ef1eb86.JPG" width=80% height=80%>
-</p>
 
 
 ## NOCUST Pros and Cons
@@ -91,6 +80,17 @@ Drawbacks:
 2. Lack of EVM Compatability
 
 NOCUST whitepaper: https://eprint.iacr.org/2018/642.pdf
+
+
+# Aegis USD (AUSD)
+
+<p align="center">
+   <img src="https://user-images.githubusercontent.com/111804246/212468050-586315d1-14f6-49fd-ad1c-475d803065e4.JPG" width=80% height=80%>
+</p>
+
+<p align="center">
+   <img src="https://user-images.githubusercontent.com/111804246/212467317-4d57e197-d810-4fea-a27b-6bef3ef1eb86.JPG" width=80% height=80%>
+</p>
 
 
 # Aegis Commit-chain
