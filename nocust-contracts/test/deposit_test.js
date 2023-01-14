@@ -1,7 +1,7 @@
 const ERC20TokenImplementation = artifacts.require("ERC20TokenImplementation")
 const NOCUSTCommitChain = artifacts.require("NOCUSTCommitChain")
 
-const LQD_TOKEN_ADDRESS = "0x549BD80b7666e689b8f28FD554a66dC382E2388F"
+const AUSD_TOKEN_ADDRESS = "0x549BD80b7666e689b8f28FD554a66dC382E2388F"
 const NOCUST_ADDRESS = "0xe263C67c412A374Ea24eC7075C3DdbdC89b1e381"
 
 contract("NOCUSTCommitChain", accounts => {
@@ -29,7 +29,7 @@ contract("NOCUSTCommitChain", accounts => {
     
     
     it("Account[0] LQD balance is more than 100", async () => {
-        ERC20instance = await ERC20TokenImplementation.deployed(LQD_TOKEN_ADDRESS)
+        ERC20instance = await ERC20TokenImplementation.deployed(AUSD_TOKEN_ADDRESS)
         LQDBalance = await ERC20instance.balanceOf(owner)
         console.log('Account LQD Balance: ', web3.utils.fromWei(LQDBalance, 'ether'))
         console.log('Minimum Balance: ', web3.utils.fromWei(minBalance, 'ether'))
@@ -38,12 +38,12 @@ contract("NOCUSTCommitChain", accounts => {
     /*
     it("LQD is added via RegisterERC20", async () => {
         NOCUSTinstance = await NOCUSTCommitChain.deployed(NOCUST_ADDRESS);
-        await NOCUSTinstance.registerERC20(LQD_TOKEN_ADDRESS)
+        await NOCUSTinstance.registerERC20(AUSD_TOKEN_ADDRESS)
     });
     */
 
     it("NOCUST contract approved for ERC20 transferFrom", async () => {
-        ERC20instance = await ERC20TokenImplementation.deployed(LQD_TOKEN_ADDRESS)
+        ERC20instance = await ERC20TokenImplementation.deployed(AUSD_TOKEN_ADDRESS)
         await ERC20instance.approve(NOCUST_ADDRESS, web3.utils.toWei('1000'))
         const allowance = await ERC20instance.allowance(owner, NOCUST_ADDRESS)
         console.log('Allowance', web3.utils.fromWei(allowance, 'ether'))
@@ -51,7 +51,7 @@ contract("NOCUSTCommitChain", accounts => {
     
     it("Deposit LQD is working", async () => {
         NOCUSTinstance = await NOCUSTCommitChain.deployed(NOCUST_ADDRESS);
-        ERC20instance = await ERC20TokenImplementation.deployed(LQD_TOKEN_ADDRESS);
+        ERC20instance = await ERC20TokenImplementation.deployed(AUSD_TOKEN_ADDRESS);
         //console.log(ERC20instance)
         let result = await NOCUSTinstance.deposit.sendTransaction(ERC20instance.address, owner, web3.utils.toWei('1', 'ether'));
         console.log(result.receipt)
