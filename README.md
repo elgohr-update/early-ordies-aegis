@@ -152,7 +152,7 @@ To run the production hub, simply do:
 ### Optional notification
 - `NOTIFICATION_HOOK_URL` should be slack notification url, if you want to use notification system
 - `SERVER_NAME` if you have a several servers, but same notification slack channel, please set this variable
-- 
+
 
 # Server Architechture
 The server spans 6 different processes, each has it's own function:
