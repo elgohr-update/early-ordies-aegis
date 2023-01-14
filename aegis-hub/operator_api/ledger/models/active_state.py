@@ -54,7 +54,7 @@ class ActiveState(CleanModel):
 
     def checksum(self):
         representation = [
-            keccak(crypto.address(settings.HUB_LQD_CONTRACT_ADDRESS)),
+            keccak(crypto.address(settings.HUB_AEGIS_CONTRACT_ADDRESS)),
             keccak(crypto.address(self.wallet.token.address)),
             keccak(crypto.address(self.wallet.address)),
             crypto.uint64(

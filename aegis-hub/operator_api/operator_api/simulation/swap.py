@@ -631,7 +631,7 @@ def init_swap_challenge(test_case: RPCTestCase, swap: Transfer, eon_number):
     node_hash = merkle_tree.leaf_hash(
         merkle_tree.wallet_leaf_inner_hash,
         {
-            'contract': settings.HUB_LQD_CONTRACT_ADDRESS,
+            'contract': settings.HUB_AEGIS_CONTRACT_ADDRESS,
             'token': swap.wallet.token.address,
             'wallet': swap.wallet.address,
             'left': sender_balance.left,

@@ -161,7 +161,7 @@ class ContractorTests(RPCTestCase):
             node_hash = merkle_tree.leaf_hash(
                 merkle_tree.wallet_leaf_inner_hash,
                 {
-                    'contract': settings.HUB_LQD_CONTRACT_ADDRESS,
+                    'contract': settings.HUB_AEGIS_CONTRACT_ADDRESS,
                     'token': eth_token.address,
                     'wallet': wallet.address,
                     'left': balance.left,
@@ -491,7 +491,7 @@ class ContractorTests(RPCTestCase):
         lqd_token = register_token(
             token_address=lqd_token_address,
             name='Liquidity',
-            short_name='LQD',
+            short_name='AUSD",
             register_on_chain=True)
 
         send_queued_transactions()
@@ -636,7 +636,7 @@ class ContractorTests(RPCTestCase):
         lqd_token = register_token(
             token_address=lqd_token_address,
             name='Liquidity',
-            short_name='LQD',
+            short_name='AUSD",
             register_on_chain=True)
 
         send_queued_transactions()
@@ -1140,7 +1140,7 @@ class ContractorTests(RPCTestCase):
         lqd_token = register_token(
             token_address=lqd_token_address,
             name='Liquidity',
-            short_name='LQD',
+            short_name='AUSD",
             register_on_chain=True)
 
         send_queued_transactions()
@@ -1257,7 +1257,7 @@ class ContractorTests(RPCTestCase):
         lqd_token = register_token(
             token_address=lqd_token_address,
             name='Liquidity',
-            short_name='LQD',
+            short_name='AUSD",
             register_on_chain=True)
 
         send_queued_transactions()
@@ -1424,7 +1424,7 @@ class ContractorTests(RPCTestCase):
         lqd_token = register_token(
             token_address=lqd_token_address,
             name='Liquidity',
-            short_name='LQD',
+            short_name='AUSD",
             register_on_chain=True)
 
         send_queued_transactions()
@@ -1601,7 +1601,7 @@ class ContractorTests(RPCTestCase):
         lqd_token = register_token(
             token_address=lqd_token_address,
             name='Liquidity',
-            short_name='LQD',
+            short_name='AUSD",
             register_on_chain=True)
 
         send_queued_transactions()
@@ -1757,7 +1757,7 @@ class ContractorTests(RPCTestCase):
         lqd_token = register_token(
             token_address=lqd_token_address,
             name='Liquidity',
-            short_name='LQD',
+            short_name='AUSD",
             register_on_chain=True)
 
         send_queued_transactions()

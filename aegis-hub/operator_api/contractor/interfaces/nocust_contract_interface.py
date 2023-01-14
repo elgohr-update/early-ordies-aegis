@@ -26,7 +26,7 @@ class NOCUSTContractInterface(EthereumInterface):
     def __init__(self):
         super(NOCUSTContractInterface, self).__init__()
         self.contract = self.web3.eth.contract(
-            address=settings.HUB_LQD_CONTRACT_ADDRESS,
+            address=settings.HUB_AEGIS_CONTRACT_ADDRESS,
             abi=nocust_contract_abi)
         self.web3.eth.defaultAccount = settings.HUB_OWNER_ACCOUNT_ADDRESS
         # self.web3.eth.enable_unaudited_features()
@@ -98,7 +98,7 @@ class NOCUSTContractInterface(EthereumInterface):
 
     def get_logs(self, block):
         logs = super(NOCUSTContractInterface, self).get_logs(block)
-        return [log for log in logs if log.get(u'address').lower() == settings.HUB_LQD_CONTRACT_ADDRESS.lower()]
+        return [log for log in logs if log.get(u'address').lower() == settings.HUB_AEGIS_CONTRACT_ADDRESS.lower()]
 
     def get_last_checkpoint_submission_eon(self, block_identifier='latest'):
         return self.contract \
@@ -135,7 +135,7 @@ class NOCUSTContractInterface(EthereumInterface):
             .call(block_identifier=block_identifier)
 
     def deposit(self, token_address, wallet, amount):
-        if same_hex_value(token_address, settings.HUB_LQD_CONTRACT_ADDRESS):
+        if same_hex_value(token_address, settings.HUB_AEGIS_CONTRACT_ADDRESS):
             return self.contract\
                 .functions\
                 .deposit(add_0x_prefix(token_address), add_0x_prefix(wallet), amount)\
@@ -147,7 +147,7 @@ class NOCUSTContractInterface(EthereumInterface):
 
             token_contract\
                 .functions\
-                .approve(settings.HUB_LQD_CONTRACT_ADDRESS, amount)\
+                .approve(settings.HUB_AEGIS_CONTRACT_ADDRESS, amount)\
                 .transact({'from': wallet})
 
             return self.contract\
@@ -243,7 +243,7 @@ class NOCUSTContractInterface(EthereumInterface):
         return aggregate_value if aggregate_eon == eon_number else 0
 
     def get_total_balance(self, token_address, block_identifier='latest'):
-        return self.get_onchain_address_balance(settings.HUB_LQD_CONTRACT_ADDRESS, token_address, block_identifier)
+        return self.get_onchain_address_balance(settings.HUB_AEGIS_CONTRACT_ADDRESS, token_address, block_identifier)
 
     def get_onchain_address_balance(self, account_address, token_address, block_identifier='latest'):
         if remove_0x_prefix(token_address) == remove_0x_prefix(account_address):
@@ -538,7 +538,7 @@ class NOCUSTContractInterface(EthereumInterface):
             .call(block_identifier=block_identifier)
 
     def get_blocks_for_confirmation(self):
-        return settings.HUB_LQD_CONTRACT_CONFIRMATIONS
+        return settings.HUB_AEGIS_CONTRACT_CONFIRMATIONS
 
     def get_blocks_for_creation(self):
         return 2 * self.get_blocks_for_confirmation()

@@ -84,8 +84,8 @@ for target in deployments:
 #    import fileinput
 #    with fileinput.input(".env", inplace=True) as env_file:
 #        for line in env_file:
-#            if "HUB_LQD_CONTRACT_ADDRESS" in line:
-#                print(f"HUB_LQD_CONTRACT_ADDRESS={env_contract}")
+#            if "HUB_AEGIS_CONTRACT_ADDRESS" in line:
+#                print(f"HUB_AEGIS_CONTRACT_ADDRESS={env_contract}")
 #            else:
 #                print(line)
 

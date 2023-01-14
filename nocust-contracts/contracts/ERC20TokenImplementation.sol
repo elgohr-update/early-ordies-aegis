@@ -203,7 +203,7 @@ contract ERC20TokenImplementation is StandardToken, DetailedERC20 {
   
   constructor()
     public
-    DetailedERC20("Liquidity.Network Token", "LQD", 18)
+    DetailedERC20("Aegis USD", "AUSD", 18)
   {
     totalSupply_ = 100000000 * (10 ** uint256(decimals));
     balances[msg.sender] = totalSupply_;

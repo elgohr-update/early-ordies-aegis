@@ -43,7 +43,7 @@ class OperatorStatusView(generics.GenericAPIView):
             confirmed=MockModel(block=confirmed.block,
                                 eon_number=confirmed.eon_number()),
             blocks_per_eon=LocalViewInterface.get_contract_parameters().blocks_per_eon,
-            confirmation_blocks=settings.HUB_LQD_CONTRACT_CONFIRMATIONS
+            confirmation_blocks=settings.HUB_AEGIS_CONTRACT_CONFIRMATIONS
         )
 
         return Response(

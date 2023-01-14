@@ -173,7 +173,7 @@ def create_token_commitment_for_eon(token: Token, eon_number):
                     eon_number=last_eon_number)
 
                 new_balances.append({
-                    'contract': settings.HUB_LQD_CONTRACT_ADDRESS,
+                    'contract': settings.HUB_AEGIS_CONTRACT_ADDRESS,
                     'token': token.address,
                     'wallet': wallet.address,
                     'left': left,
@@ -314,7 +314,7 @@ def create_token_commitment_for_eon(token: Token, eon_number):
                 content='There are some additional funds in the balance pool that belong to no one: {} of {}'
                 .format(managed_funds - right, token.address))
             altered_balances = new_balances + [{
-                'contract': settings.HUB_LQD_CONTRACT_ADDRESS,
+                'contract': settings.HUB_AEGIS_CONTRACT_ADDRESS,
                 'token': token.address,
                 'wallet': settings.HUB_OWNER_ACCOUNT_ADDRESS,
                 'left': left,

@@ -67,7 +67,7 @@ def send_queued_transactions():
                     add_0x_prefix(mined_transaction.hash))
 
                 if receipt is not None:
-                    if receipt.get('blockNumber') - latest_block > settings.HUB_LQD_CONTRACT_CONFIRMATIONS:
+                    if receipt.get('blockNumber') - latest_block > settings.HUB_AEGIS_CONTRACT_CONFIRMATIONS:
                         logger.info('Transaction confirmed! {}'.format(
                             last_attempt.hash))
                         mined_transaction.confirmed = True

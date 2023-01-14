@@ -16,7 +16,7 @@ logger.setLevel(logging.INFO)
 
 @shared_task
 def register_eth_token():
-    if Token.objects.filter(address__iexact=remove_0x_prefix(settings.HUB_LQD_CONTRACT_ADDRESS)).exists():
+    if Token.objects.filter(address__iexact=remove_0x_prefix(settings.HUB_AEGIS_CONTRACT_ADDRESS)).exists():
         logger.error('ETH token already registered.')
         return
 
@@ -27,7 +27,7 @@ def register_eth_token():
     logger.warning('Registering ETH Token')
 
     eth_token = register_token(
-        token_address=settings.HUB_LQD_CONTRACT_ADDRESS,
+        token_address=settings.HUB_AEGIS_CONTRACT_ADDRESS,
         name='Ethereum',
         short_name='ETH',
         register_on_chain=False)

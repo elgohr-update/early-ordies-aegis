@@ -25,7 +25,7 @@ class SwapTestCase(RPCTestCase):
         self.lqd_token = register_token(
             token_address=lqd_token_address,
             name='Liquidity',
-            short_name='LQD',
+            short_name='AUSD',
             register_on_chain=True)
 
         send_queued_transactions()

@@ -84,7 +84,7 @@ class LocalViewInterface:
     # TIMING
     @staticmethod
     def blocks_for_confirmation():
-        return settings.HUB_LQD_CONTRACT_CONFIRMATIONS
+        return settings.HUB_AEGIS_CONTRACT_CONFIRMATIONS
 
     @staticmethod
     def blocks_for_creation():

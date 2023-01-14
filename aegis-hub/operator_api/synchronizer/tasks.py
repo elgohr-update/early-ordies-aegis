@@ -20,7 +20,7 @@ def trigger_hook(data):
         chain_id = cache.get_or_set(
             'chain_id', EthereumInterface().get_chain_id())
         data['operator'] = "{}-{}".format(
-            settings.HUB_LQD_CONTRACT_ADDRESS, chain_id)
+            settings.HUB_AEGIS_CONTRACT_ADDRESS, chain_id)
         try:
             req = requests.post(
                 settings.NOTIFICATION_HOOK_URL,

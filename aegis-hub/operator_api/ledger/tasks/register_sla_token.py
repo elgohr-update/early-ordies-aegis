@@ -28,6 +28,6 @@ def register_sla_token():
 
     register_token(
         token_address=settings.SLA_TOKEN_ADDRESS,
-        name='LQD',
-        short_name='LQD',
+        name='AUSD',
+        short_name='AUSD',
         register_on_chain=True)

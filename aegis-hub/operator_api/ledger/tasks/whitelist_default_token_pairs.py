@@ -14,7 +14,7 @@ logger.setLevel(logging.INFO)
 def whitelist_default_token_pairs():
     try:
         eth_token = Token.objects.get(
-            address__iexact=remove_0x_prefix(settings.HUB_LQD_CONTRACT_ADDRESS))
+            address__iexact=remove_0x_prefix(settings.HUB_AEGIS_CONTRACT_ADDRESS))
         sla_token = Token.objects.get(
             address__iexact=remove_0x_prefix(settings.SLA_TOKEN_ADDRESS))
 
