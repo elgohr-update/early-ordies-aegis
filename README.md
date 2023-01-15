@@ -159,6 +159,7 @@ To run the production hub, simply do:
 - `NOTIFICATION_HOOK_URL` should be slack notification url, if you want to use notification system
 - `SERVER_NAME` if you have a several servers, but same notification slack channel, please set this variable
 
+</br>
 
 More info: https://github.com/spear-protocol/aegis/blob/main/aegis-hub/
 
