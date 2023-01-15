@@ -31,6 +31,8 @@ Demo Instance #2: http://aegis-demo-two.spear.technology/
 
 Available Accounts: https://github.com/spear-protocol/aegis/blob/main/aegis-demo/available-accounts.txt
 
+More info: https://github.com/spear-protocol/aegis/tree/main/aegis-demo
+
 </br>
 
 https://user-images.githubusercontent.com/111804246/212467794-0920e5ff-3006-44e1-87a1-f9ee914ff213.mp4
@@ -60,8 +62,6 @@ Ganache Blockchain:
 | Chain ID | 1337 |
 | Symbol | ETH |
 
-</br>
-More info: https://github.com/spear-protocol/aegis/tree/main/aegis-demo
 </br>
 
 
