@@ -8,7 +8,7 @@ Features:
 - [Unbounded Scalability](https://docs.liquidity.network/costs) compared to rollups
 - Instant transaction finality
 - Low fees paid with AUSD stablecoin
-- Can support ETH and any other ERC-20 token
+- Supports ETH and any other ERC-20 token
 - Enables a [TEX (Trustless Exchange)](https://github.com/spear-protocol/nocust-tex-frontend)
 
 We envision a world where no one is unbanked and where anyone can participate in the global financial system that is fast, cheap and transparent while keeping custody of their money. To achieve our vision, we shall combine two powerful and synergistic technologies: the [Reserve protocol](https://reserve.org/en/protocol/) and the [NOCUST commit-chain](https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/commit-chains/).
