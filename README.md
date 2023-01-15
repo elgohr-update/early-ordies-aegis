@@ -1,4 +1,4 @@
-# Aegis
+# Overview
 
 A secure, scalable, and non-custodial Ethereum L2 powered by the Reserve RToken platform.
 
@@ -13,6 +13,13 @@ Features:
 
 We envision a world where no one is unbanked and where anyone can participate in the global financial system that is fast, cheap and transparent while keeping custody of their money. To achieve our vision, we shall combine two powerful and synergistic technologies: the [Reserve protocol](https://reserve.org/en/protocol/) and the [NOCUST commit-chain](https://docs.liquidity.network/background).
 
+# System Design
+
+Aegis has two main components:
+
+1. Aegis USD (AUSD) stablecoin - an RToken that is designed to protect the funds of normal users who we envisage to be regular everyday people through collateral diversity and collateral default insurance. The fees for transacting on Aegis will be paid using AUSD.
+
+2. Aegis Commit-chain - A chain of commits to the NOCUST smart contracts on Ethereum by centralized but trustless operators running the Aegis Hub server. The operators facilitate gas-less transactions off-chain without taking custody of user funds. 
 
 # Demo
 
@@ -56,14 +63,6 @@ Ganache Blockchain:
 More info: https://github.com/spear-protocol/aegis/tree/main/aegis-demo
 </br>
 
-# System Design
-
-Aegis has two main components:
-
-1. Aegis USD (AUSD) stablecoin - an RToken that is designed to protect the funds of normal users who we envisage to be regular everyday people through collateral diversity and collateral default insurance. The fees for transacting on Aegis will be paid using AUSD.
-
-2. Aegis Commit-chain - A chain of commits to the NOCUST smart contracts on Ethereum by centralized but trustless operators running the Aegis Hub server. The operators facilitate gas-less transactions off-chain without taking custody of user funds. 
-
 
 ## Reserve x NOCUST
 
@@ -74,6 +73,7 @@ Project Overview: https://docs.google.com/presentation/d/1SbtcPyLduc81ADMjvGpHKU
 NOCUST academic paper: https://eprint.iacr.org/2018/642.pdf
 
 TEX academic paper: https://eprint.iacr.org/2019/265
+
 </br>
 
 ## NOCUST Pros and Cons
