@@ -84,7 +84,10 @@ Drawbacks:
 2. Lack of EVM Compatability
 
 NOCUST academic paper: https://eprint.iacr.org/2018/642.pdf
+
 TEX academic paper: https://eprint.iacr.org/2019/265
+
+</br>
 
 # Aegis USD (AUSD)
 
