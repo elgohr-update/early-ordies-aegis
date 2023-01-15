@@ -47,6 +47,7 @@ https://user-images.githubusercontent.com/111804246/212467825-d89b9f02-cc6b-4d0f
   <h6>Aegis Demo Part 2</h6>
 </div>
 
+</br>
 
 Aegis Hub: http://aegis-hub.spear.technology/audit/
 
