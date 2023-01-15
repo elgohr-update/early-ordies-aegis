@@ -1,8 +1,8 @@
 # Overview
 
-A secure, scalable, and non-custodial Ethereum L2 powered by the Reserve RToken platform.
+Aegis is a secure, scalable, and non-custodial Ethereum L2 powered by the Reserve RToken platform.
 
-Aegis is a mythical shield in Greek mythology that protected Zeus and Athena in battle. In a similar fashion, the Aegis L2 is designed to protect users and their funds while they are conducting finance and commerce in an increasingly adversarial environment.
+Named after the mythical shield in Greek mythology that protected Zeus and Athena in battle. In a similar fashion, the Aegis L2 is designed to protect users and their funds while they are conducting finance and commerce in an increasingly adversarial environment.
 
 Features:
 - [Unbounded Scalability](https://docs.liquidity.network/costs) compared to rollups
