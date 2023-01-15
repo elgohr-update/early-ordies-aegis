@@ -9,7 +9,7 @@ Features:
 - Instant transaction finality
 - Low fees paid with AUSD stablecoin
 - Can support ETH and any other ERC-20 token
-- Enables a [TEX](https://eprint.iacr.org/2019/265) (Trustless Exchange)
+- Enables a [TEX (Trustless Exchange)](https://github.com/spear-protocol/nocust-tex-frontend)
 
 We envision a world where no one is unbanked and where anyone can participate in the global financial system that is fast, cheap and transparent while keeping custody of their money. To achieve our vision, we shall combine two powerful and synergistic technologies: the [Reserve protocol](https://reserve.org/en/protocol/) and the [NOCUST commit-chain](https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/commit-chains/).
 
@@ -83,8 +83,8 @@ Drawbacks:
 1. [Weak Tokenomics](https://blog.liquidity.network/2020/07/12/hub-operator-program/)
 2. Lack of EVM Compatability
 
-NOCUST whitepaper: https://eprint.iacr.org/2018/642.pdf
-
+NOCUST academic paper: https://eprint.iacr.org/2018/642.pdf
+TEX academic paper: https://eprint.iacr.org/2019/265
 
 # Aegis USD (AUSD)
 
