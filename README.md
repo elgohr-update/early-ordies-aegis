@@ -71,6 +71,11 @@ Reserve's RTokens unleashes the potential of the NOCUST concept by improving the
 
 Project Overview: https://docs.google.com/presentation/d/1SbtcPyLduc81ADMjvGpHKU23flVJVWTYemeeXz8Eiuo/
 
+NOCUST academic paper: https://eprint.iacr.org/2018/642.pdf
+
+TEX academic paper: https://eprint.iacr.org/2019/265
+
+</br>
 
 ## NOCUST Pros and Cons
 
@@ -83,11 +88,7 @@ Drawbacks:
 1. [Weak Tokenomics](https://blog.liquidity.network/2020/07/12/hub-operator-program/)
 2. Lack of EVM Compatability
 
-NOCUST academic paper: https://eprint.iacr.org/2018/642.pdf
 
-TEX academic paper: https://eprint.iacr.org/2019/265
-
-</br>
 
 # Aegis USD (AUSD)
 
