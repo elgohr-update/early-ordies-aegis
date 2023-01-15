@@ -74,7 +74,6 @@ Project Overview: https://docs.google.com/presentation/d/1SbtcPyLduc81ADMjvGpHKU
 NOCUST academic paper: https://eprint.iacr.org/2018/642.pdf
 
 TEX academic paper: https://eprint.iacr.org/2019/265
-
 </br>
 
 ## NOCUST Pros and Cons
