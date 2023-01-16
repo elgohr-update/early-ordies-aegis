@@ -117,7 +117,7 @@ An Aegis Hub is a server that is run by an operator to interact with the Aegis c
 This will guide you through how to deploy and operate an Aegis Hub server.
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=GCG12uoM4s8" target="_blank">
- <img src="http://img.youtube.com/vi/GCG12uoM4s8/mqdefault.jpg" alt="Watch the video" width="800" border="10" />
+ <img src="http://img.youtube.com/vi/GCG12uoM4s8/mqdefault.jpg" alt="Watch the video" height="640px" border="10" />
 </a>
 <div align="center">
   <h6>Disclaimer: This video was published by the Liquidity Network team.</h6>
