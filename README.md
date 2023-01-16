@@ -17,9 +17,9 @@ We envision a world where no one is unbanked and where anyone can participate in
 
 Aegis has two main components:
 
-1. Aegis USD (AUSD) stablecoin - an RToken that is designed to protect the funds of normal users who we envisage to be regular everyday people through collateral diversity and collateral default insurance. The fees for transacting on Aegis will be paid using AUSD.
+1. [Aegis USD (AUSD)](https://github.com/spear-protocol/aegis#aegis-usd-ausd) stablecoin - an RToken that is designed to protect the funds of normal users who we envisage to be regular everyday people through collateral diversity and collateral default insurance. The fees for transacting on Aegis will be paid using AUSD.
 
-2. Aegis Commit-chain - A chain of commits to the NOCUST smart contracts on Ethereum by centralized but trustless operators running the Aegis Hub server. The operators facilitate gas-less transactions off-chain without taking custody of user funds. 
+2. [Aegis Commit-chain](https://github.com/spear-protocol/aegis#aegis-commit-chain) - A chain of commits to the NOCUST smart contracts on Ethereum by centralized but trustless operators running the Aegis Hub server. The operators facilitate gas-less transactions off-chain without taking custody of user funds. 
 
 # Demo
 
