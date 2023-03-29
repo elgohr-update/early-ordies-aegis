@@ -16,7 +16,7 @@ jobs:
         ref: ${{ github.ref }}
     
     - name: Build and push tagged image to Docker Hub
-      uses: elgohr/Publish-Docker-Github-Action@2.9     
+      uses: elgohr/Publish-Docker-Github-Action@v5     
       with:
         name: tomfrench/liquidityburner
         username: ${{ secrets.DOCKER_USERNAME }}
@@ -24,7 +24,7 @@ jobs:
         tag_names: true
     
     - name: Push image with latest tag to Docker Hub
-      uses: elgohr/Publish-Docker-Github-Action@2.9
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: tomfrench/liquidityburner
         username: ${{ secrets.DOCKER_USERNAME }}
